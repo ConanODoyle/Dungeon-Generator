@@ -61,8 +61,9 @@ public abstract class DungeonRoom {
         int count = 0;
         for (int i = 0; i < 4; i++) {
             Triple shift = pos.transform(xShift[i], yShift[i], 0);
-            if (tileLoc.containsKey(shift))
+            if (tileLoc.containsKey(shift)) {
                 count++;
+            }
         }
         return count;
     }
@@ -72,8 +73,9 @@ public abstract class DungeonRoom {
         for (int i = 0; i < 6; i++) {
             Triple shift = pos.transform(xShift[i], yShift[i], 0);
             if (!tileLoc.containsKey(shift)) {
-                if (!d.isPositionOccupied(shift))
+                if (!d.isPositionOccupied(shift)) {
                     result[i] = 1;
+                }
             }
         }
         return result;
@@ -95,8 +97,9 @@ public abstract class DungeonRoom {
             xMin = Math.min(t.x, xMin); xMax = Math.max(t.x, xMax);
             yMin = Math.min(t.y, yMin); yMax = Math.max(t.y, yMax);
             zMin = Math.min(t.z, zMin); zMax = Math.max(t.z, zMax);
-            if (!takenPos.contains(t.position))
+            if (!takenPos.contains(t.position)) {
                 takenPos.add(t.position);
+            }
         }
         pos = new Triple(xMin, yMin, zMin);
         dim = new Triple(xMax - xMin + 1, yMax - yMin + 1, zMax - zMin + 1);

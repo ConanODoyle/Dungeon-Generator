@@ -9,7 +9,7 @@ public class Tile {
     public int y;
     public int z;
     public Triple position;
-    public String type;
+    public String type = "";
     public HashMap<Integer, Tile> connections = new HashMap<>(); //0-3 forward right back left; 4 up, 5 down
     public DungeonMap d;
     public char character;

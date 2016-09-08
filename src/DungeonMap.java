@@ -1,7 +1,10 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Random;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.lang.reflect.Array;
+import java.util.*;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 /**Generates the map layout
  * Generic class that randomly selects rooms and places them in random positions.
@@ -30,6 +33,38 @@ public class DungeonMap {
         return false;
     }
 
+    public Tile getRandomExit(int ignore) {
+        ArrayList<Integer> roomNums = new ArrayList(IntStream
+                .iterate(0, n -> n + 1)
+                .limit(rooms.size())
+                .boxed()
+                .collect(Collectors.toList()));
+        roomNums.remove(new Integer(ignore));
+
+        int roomNum;
+        DungeonRoom room;
+        Tile result = null;
+        while (roomNums.size() > 0) {
+            roomNum = roomNums.get(rand.nextInt(roomNums.size()));
+            room = rooms.get(roomNum);
+            if (room.exits.size() > 0) {
+                result = room.exits.get(rand.nextInt(room.exits.size()));
+                break;
+            } else {
+                roomNums.remove(new Integer(roomNum));
+            }
+        }
+        return result;
+    }
+
+    protected void addTile(Triple pos, Tile t) {
+        tiles.add(t);
+        if (tileLoc.containsKey(pos)) {
+            System.out.println("Warning: room contains tile at position already, overwriting...");
+        }
+        tileLoc.put(pos, t);
+    }
+
     public void pickExits() {
         for (DungeonRoom r : rooms) {
             r.pickExits();
@@ -40,6 +75,7 @@ public class DungeonMap {
 
     public void generatePath(Triple st, Triple en, int length, boolean vertical, boolean prematureFinish) {
         pathTiles = new ArrayList<>();
+        pathCount = 0;
         _generatePath(st, en, length, vertical, prematureFinish);
     }
 
@@ -52,17 +88,16 @@ public class DungeonMap {
             }
             return getTileAt(st);
         } else if (length <= 0 || length < dist) {
-            System.out.println("Invalid distance to end! " + length + " < " + dist);
+            //System.out.println("Invalid distance to end! " + length + " < " + dist);
             return null;
         } else if (isPositionOccupiedByRoom(st) || pathTiles.contains(getTileAt(st))) {
-            System.out.println("Position already in use!!");
+            //System.out.println("Position already in use!!");
             return null;
         }
         //create a tile here if needed
         boolean hadTile = true;
         if (getTileAt(st) == null) {
-            tileLoc.put(st, new Tile(st, "path", this));
-            tiles.add(tileLoc.get(st));
+            addTile(st, new Tile(st, "path", this));
             tileLoc.get(st).character = (char) ('0' + pathCount++);
             hadTile = false;
         } else {
@@ -73,10 +108,8 @@ public class DungeonMap {
         //pick a random direction and go with it
         Integer[] o = {0, 1, 2, 3, 4, 5};
         ArrayList<Integer> options = new ArrayList<>(Arrays.asList(o));
-        System.out.println("Picking a direction...");
         while (options.size() > 0) {
             int dir = options.get(rand.nextInt(options.size()));
-            System.out.println("    dir: " + dir);
             if (!vertical && dir > 3) { //if we just came from a vertical movement we can't do it again
                 options.remove(new Integer(dir));
                 continue;
@@ -89,7 +122,6 @@ public class DungeonMap {
                 nextTile = _generatePath(nextPos, en, length - 1, true, prematureFinish);
             }
             if (nextTile != null) {
-                System.out.println("Found path, collapsing...");
                 getTileAt(st).connect(nextTile);
                 nextTile.connect(getTileAt(st));
                 return getTileAt(st);
@@ -98,7 +130,7 @@ public class DungeonMap {
             }
         }
         //could not find path, so remove tile as necessary.
-        System.out.println("Could not find valid path!");
+        //System.out.println("Could not find valid path!");
         if (!hadTile) {
             tiles.remove(tileLoc.get(st));
             pathTiles.remove(tileLoc.get(st));
@@ -108,7 +140,9 @@ public class DungeonMap {
         return null;
     }
 
+    private int fileNum = -1;
     public void printDungeon() {
+        fileNum++;
         //get edge points
         int xMin; int xMax;
         int yMin; int yMax;
@@ -174,14 +208,41 @@ public class DungeonMap {
         }
 
         //print layer by layer
+        BufferedWriter writer = null;
+        try {
+            writer = new BufferedWriter(new FileWriter("" + fileNum + ".map"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         for (int i = 0; i < printArray[0][0].length; i++) {
-            System.out.println("Layer " + i);
+            try {
+                writer.write("Layer " + i);
+                writer.newLine();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            System.out.println("\nLayer " + i);
             for (int j = 0; j < printArray[0].length; j++) {
                 for (int k = 0; k < printArray.length; k++) {
+                    try {
+                        writer.write(printArray[k][j][i]);
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
                     System.out.print(printArray[k][j][i]);
+                }
+                try {
+                    writer.newLine();
+                } catch (IOException e) {
+                    e.printStackTrace();
                 }
                 System.out.println();
             }
+        }
+        try {
+            writer.close();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 
@@ -195,5 +256,16 @@ public class DungeonMap {
         } else {
             return null;
         }
+    }
+
+    public ArrayList<Triple> getExitXYAdjacentOpenPositions(Triple pos) {
+        ArrayList<Triple> result = new ArrayList<>();
+        for (int i = 0; i < 4; i++) {
+            Triple shift = pos.transform(Triple.xShift[i], Triple.yShift[i], 0);
+            if (!isPositionOccupied(shift) || getTileAt(shift).type.equals("path")) {
+                result.add(shift);
+            }
+        }
+        return result;
     }
 }
