@@ -98,7 +98,7 @@ public class DungeonMap {
         boolean hadTile = true;
         if (getTileAt(st) == null) {
             addTile(st, new Tile(st, "path", this));
-            tileLoc.get(st).character = (char) ('0' + pathCount++);
+            tileLoc.get(st).character = (char) ('0' + (pathCount++) % 10);
             hadTile = false;
         } else {
             getTileAt(st).character = '+';
@@ -159,9 +159,9 @@ public class DungeonMap {
             }
 
             for (Tile t : tiles) {
-                xMin = Math.min(t.x, xMin); xMax = Math.max(t.x, xMax);
-                yMin = Math.min(t.y, yMin); yMax = Math.max(t.y, yMax);
-                zMin = Math.min(t.z, zMin); zMax = Math.max(t.z, zMax);
+                xMin = Math.min(t.x, xMin); xMax = Math.max(t.x + 1, xMax);
+                yMin = Math.min(t.y, yMin); yMax = Math.max(t.y + 1, yMax);
+                zMin = Math.min(t.z, zMin); zMax = Math.max(t.z + 1, zMax);
             }
         } else if (tiles.isEmpty()) {
             System.out.println("Cannot print; nothing to print!");
