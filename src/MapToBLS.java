@@ -80,7 +80,7 @@ public class MapToBLS {
     private static final int COLOR_DARK_GREY = 6;
 
     public static void generateSimpleBLS(String fileName) throws Exception {
-        BufferedReader br = new BufferedReader(new FileReader(new File(fileName)));
+        BufferedReader br = new BufferedReader(new FileReader(new File("saves/" + fileName)));
         String line = br.readLine();
         int brickCount = 0;
         while (line != null) {

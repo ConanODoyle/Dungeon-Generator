@@ -2,14 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64da1b6c-b8bb-4c8a-b54b-406cfcbdcf5a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/RectRoom.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/0.map" afterPath="$PROJECT_DIR$/0.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/1.map" afterPath="$PROJECT_DIR$/1.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DUNGEON 10.bls" afterPath="$PROJECT_DIR$/DUNGEON 10.bls" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BasicRoom.java" afterPath="$PROJECT_DIR$/src/BasicRoom.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DungeonMapTest.java" afterPath="$PROJECT_DIR$/src/DungeonMapTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DungeonRoom.java" afterPath="$PROJECT_DIR$/src/DungeonRoom.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/0.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/10.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/11.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/12.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/13.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/14.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/15.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/16.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/3.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/5.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/6.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/7.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/8.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/9.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DUNGEON 0.bls" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DUNGEON 1.bls" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DUNGEON 10.bls" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DUNGEON 2.bls" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DUNGEON 3.bls" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DUNGEON 4.bls" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DUNGEON 5.bls" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DUNGEON 6.bls" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DUNGEON 7.bls" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DUNGEON 8.bls" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DUNGEON 9.bls" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MapToBLS.java" afterPath="$PROJECT_DIR$/src/MapToBLS.java" />
     </list>
     <ignored path="Dungeon Generator.iws" />
@@ -25,76 +45,6 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
-  </component>
-  <component name="DockManager">
-    <window id="3">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="15.map" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/success/1/15.map">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="133">
-                    <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="16.map" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/16.map">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="-2113">
-                    <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="15.map" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/15.map">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="-2113">
-                    <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="14.map" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/14.map">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="-1833">
-                    <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="13.map" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/13.map">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="0">
-                    <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="1.map" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/1.map">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="2702">
-                    <caret line="193" column="8" selection-start-line="193" selection-start-column="8" selection-end-line="193" selection-end-column="8" />
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -134,11 +84,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="RectRoom.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="RectRoom.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/RectRoom.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="287">
-                  <caret line="69" column="34" selection-start-line="69" selection-start-column="34" selection-end-line="69" selection-end-column="34" />
+                <state relative-caret-position="105">
+                  <caret line="59" column="32" selection-start-line="59" selection-start-column="32" selection-end-line="59" selection-end-column="32" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -177,24 +127,14 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="MapToBLS.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="MapToBLS.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/MapToBLS.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="336">
-                  <caret line="60" column="49" selection-start-line="60" selection-start-column="49" selection-end-line="60" selection-end-column="49" />
+                <state relative-caret-position="371">
+                  <caret line="159" column="0" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="DUNGEON 0.bls" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/DUNGEON 0.bls">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-252">
-                  <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
-                  <folding />
                 </state>
               </provider>
             </entry>
@@ -203,7 +143,7 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="DungeonMap.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="DungeonMap.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/DungeonMap.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="-784">
@@ -215,7 +155,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="DungeonMapTest.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="DungeonMapTest.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/DungeonMapTest.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="252">
@@ -274,12 +214,12 @@
         <option value="$PROJECT_DIR$/src/Triple.java" />
         <option value="$PROJECT_DIR$/1.map" />
         <option value="$PROJECT_DIR$/DUNGEON 0.bls" />
-        <option value="$PROJECT_DIR$/src/MapToBLS.java" />
         <option value="$PROJECT_DIR$/src/DungeonMap.java" />
         <option value="$PROJECT_DIR$/src/BasicRoom.java" />
         <option value="$PROJECT_DIR$/src/DungeonMapTest.java" />
         <option value="$PROJECT_DIR$/src/DungeonRoom.java" />
         <option value="$PROJECT_DIR$/src/RectRoom.java" />
+        <option value="$PROJECT_DIR$/src/MapToBLS.java" />
       </list>
     </option>
   </component>
@@ -698,7 +638,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -708,7 +648,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25183016" sideWeight="0.73796296" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25183016" sideWeight="0.73796296" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962963" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -839,8 +779,6 @@
             <element signature="e#274#307#0" expanded="true" />
             <element signature="e#1574#1575#0" expanded="true" />
             <element signature="e#1621#1622#0" expanded="true" />
-            <element signature="e#3873#3874#0" expanded="true" />
-            <element signature="e#3948#3949#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -980,14 +918,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/success/1/15.map">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/16.map">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2113">
@@ -999,14 +929,6 @@
     <entry file="file://$PROJECT_DIR$/15.map">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2113">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/14.map">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1833">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -1063,34 +985,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DUNGEON 0.bls">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-252">
-          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MapToBLS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="60" column="49" selection-start-line="60" selection-start-column="49" selection-end-line="60" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DungeonMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-784">
-          <caret line="84" column="24" selection-start-line="84" selection-start-column="24" selection-end-line="84" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/TripleTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
@@ -1110,27 +1004,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/RectRoom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="69" column="34" selection-start-line="69" selection-start-column="34" selection-end-line="69" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/DungeonRoom.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        <state relative-caret-position="304">
+          <caret line="54" column="9" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#274#307#0" expanded="true" />
             <element signature="e#1574#1575#0" expanded="true" />
             <element signature="e#1621#1622#0" expanded="true" />
-            <element signature="e#3873#3874#0" expanded="true" />
-            <element signature="e#3948#3949#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1140,6 +1022,60 @@
         <state relative-caret-position="252">
           <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/14.map">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1833">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/success/1/15.map">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RectRoom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="59" column="32" selection-start-line="59" selection-start-column="32" selection-end-line="59" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DungeonMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-784">
+          <caret line="84" column="24" selection-start-line="84" selection-start-column="24" selection-end-line="84" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DUNGEON 0.bls">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8827">
+          <caret line="40" column="24" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MapToBLS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="159" column="0" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
