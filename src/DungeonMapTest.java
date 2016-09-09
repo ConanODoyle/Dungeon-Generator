@@ -10,8 +10,8 @@ import java.util.Random;
  */
 public class DungeonMapTest {
 
-    public int maxRooms = 22;
-    public int approxWidth = 10;
+    public int maxRooms = 22; //max 26 since the bls generator assumes the rooms use letters
+    public int approxWidth = 10; //max will not apply later when proper BLS generation is added.
     public int approxLength = 40;
     public int approxHeight = 8;
 
@@ -24,7 +24,7 @@ public class DungeonMapTest {
             x = rand.nextInt(approxWidth);
             y = rand.nextInt(approxLength);
             z = rand.nextInt(approxHeight) + 1;
-            DungeonRoom r1 = new BasicRoom(new Triple(x, y, z), 12 + rand.nextInt(15), map);
+            DungeonRoom r1 = new RectRoom(new Triple(x, y, z), 8 + rand.nextInt(15), 3, map);
             r1.generateRoom();
             map.rooms.add(r1);
         }
@@ -64,12 +64,14 @@ public class DungeonMapTest {
 
                 start = startPosOptions.get(map.rand.nextInt(startPosOptions.size()));
                 end = endPosOptions.get(map.rand.nextInt(endPosOptions.size()));
-                System.out.println("   Path Distance: " + (start.distanceFrom(end) + Math.pow(approxHeight*approxLength*approxWidth, 1.0/3)/2));
-                if (!map.generatePath(start, end, start.distanceFrom(end) + 5, true, true)) {
+                System.out.println("   Path Distance: " + start.distanceFrom(end) + " + " + (int) (Math.pow(approxHeight*approxLength*approxWidth, 1.0/3) / 3 + 1));
+                if (!map.generatePath(start, end, start.distanceFrom(end) + (int) Math.pow(approxHeight*approxLength*approxWidth, 1.0/3) / 3 + 1, true, true)) {
+                    System.out.println("      Could not find path! Restarting...");
                     j--;
                     continue;
                 }
                 startTile.connect(map.tileLoc.get(start));
+                endTile.connect(map.tileLoc.get(end));
                 //map.printDungeon();
             }
             MapToBLS.generateSimpleBLS("1.map");

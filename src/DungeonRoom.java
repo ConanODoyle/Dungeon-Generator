@@ -24,6 +24,7 @@ public abstract class DungeonRoom {
 
     public DungeonRoom(Triple pos) {
         this.startPos = pos;
+        this.pos = pos;
         this.dim = Triple.ORIGIN;
     }
 

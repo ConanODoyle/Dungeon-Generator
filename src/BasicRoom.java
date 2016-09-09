@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Random;
 
 
 /**A basic flat room with doors and single-height ceiling
@@ -14,7 +13,7 @@ public class BasicRoom extends DungeonRoom{
 
     public BasicRoom(Triple pos, DungeonMap d) {
         super(pos);
-        maxVolume = new Random().nextInt(20);
+        maxVolume = rand.nextInt(20);
         this.d = d;
     }
 
@@ -101,6 +100,7 @@ public class BasicRoom extends DungeonRoom{
         return tiles;
     }
 
+    @Override
     public void pickExits() {
         Collections.shuffle(takenPos);
         int index = 0;
