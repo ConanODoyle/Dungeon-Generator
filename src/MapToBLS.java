@@ -6,7 +6,7 @@ import java.util.Arrays;
  * Simple assumes the .map files contain only *, A-Z, and .'s
  */
 public class MapToBLS {
-    public static final String SAVE_FILE_PREFIX =
+    private static final String SAVE_FILE_PREFIX =
         "This is a Blockland save file.  You probably shouldn't modify it cause you'll screw it up.\n" +
         "1\n" +
         "\n" +
@@ -75,17 +75,9 @@ public class MapToBLS {
         "1.000000 0.000000 1.000000 0.000000\n" +
         "1.000000 0.000000 1.000000 0.000000";
 
-    public static final int COLOR_BLACK = 35;
-    public static final int[] COLOR_ARRAY = {8, 0, 1, 2, 3, 5, 6, 8, 0, 1, 2, 3, 5, 6, 8, 0, 1, 2, 3, 5, 6, 8, 0, 1, 2, 3, 5, 6, 8, 0, 1, 2, 3, 5, 6, 8, 0, 1, 2, 3, 5, 6};
-    public static final int COLOR_WHITE = 17;
-    public static final int COLOR_RED = 0;
-    public static final int COLOR_YELLOW = 1;
-    public static final int COLOR_GREEN = 2;
-    public static final int COLOR_BLUE = 3;
-    public static final int COLOR_LIGHT_GREY = 4;
-    public static final int COLOR_GREY = 5;
-    public static final int COLOR_DARK_GREY = 6;
-    public static final int COLOR_MAROON = 8;
+    private static final int COLOR_BLACK = 35;
+    private static final int[] COLOR_ARRAY = {8, 0, 1, 2, 3, 5, 6, 8, 0, 1, 2, 3, 5, 6, 8, 0, 1, 2, 3, 5, 6, 8, 0, 1, 2, 3, 5, 6, 8, 0, 1, 2, 3, 5, 6, 8, 0, 1, 2, 3, 5, 6};
+    private static final int COLOR_DARK_GREY = 6;
 
     public static void generateSimpleBLS(String fileName) throws Exception {
         BufferedReader br = new BufferedReader(new FileReader(new File(fileName)));
@@ -113,7 +105,6 @@ public class MapToBLS {
 
         String BRICK_NAME = "4x Cube\"";
         String position;
-        String color;
         String writeLine;
 
         int xPos = 2;
@@ -159,15 +150,15 @@ public class MapToBLS {
         bw.close();
     }
 
-    public static String makeSimpleBrickString(String brick, String position, int color) {
+    private static String makeSimpleBrickString(String brick, String position, int color) {
         return brick + " " + position + " 0 0 " + color + "  0 0 1 1 1";
     }
 
-    public static String makeSimpleBrickExitString(String brick, String position, int color) {
+    private static String makeSimpleBrickExitString(String brick, String position, int color) {
         return brick + " " + position + " 0 0 " + color + " Letters/A 0 0 1 1 1";
     }
 
-    public static final int DUNGEON_NUMBER = 9;
+    private static final int DUNGEON_NUMBER = 10;
 
     public static void main(String[] args) throws Exception {
         generateSimpleBLS("1.map");

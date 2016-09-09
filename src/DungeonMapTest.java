@@ -4,19 +4,26 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Random;
 
-/**
- * Created by Samuel on 9/7/2016.
+/**Used to test dungeon generation
+ * Really the major dungeon generation logic
+ * Should move to DungeonMap as a "generateDungeon" function
  */
 public class DungeonMapTest {
+
+    public int maxRooms = 22;
+    public int approxWidth = 10;
+    public int approxLength = 40;
+    public int approxHeight = 8;
+
     @Test
     public void printDungeon() throws Exception {
         DungeonMap map = new DungeonMap();
         Random rand = new Random();
         int x; int y; int z;
-        for (int i = 0; i < 22; i++) {
-            x = rand.nextInt(22);
-            y = rand.nextInt(22);
-            z = rand.nextInt(16) + 1;
+        for (int i = 0; i < maxRooms; i++) {
+            x = rand.nextInt(approxWidth);
+            y = rand.nextInt(approxLength);
+            z = rand.nextInt(approxHeight) + 1;
             DungeonRoom r1 = new BasicRoom(new Triple(x, y, z), 12 + rand.nextInt(15), map);
             r1.generateRoom();
             map.rooms.add(r1);
@@ -37,7 +44,7 @@ public class DungeonMapTest {
         int[] options = {0, 1, 2, 3, 4, 5};
         ArrayList<Integer> roomOptions;
         DungeonRoom r;
-        for (int i = 0; i < 22; i++) {
+        for (int i = 0; i < maxRooms; i++) {
             roomOptions = new ArrayList(Arrays.asList(options));
             roomOptions.remove(new Integer(i));
             r = map.rooms.get(i);
@@ -57,7 +64,7 @@ public class DungeonMapTest {
 
                 start = startPosOptions.get(map.rand.nextInt(startPosOptions.size()));
                 end = endPosOptions.get(map.rand.nextInt(endPosOptions.size()));
-                System.out.println("   Path Distance: " + (start.distanceFrom(end) + 10));
+                System.out.println("   Path Distance: " + (start.distanceFrom(end) + Math.pow(approxHeight*approxLength*approxWidth, 1.0/3)/2));
                 if (!map.generatePath(start, end, start.distanceFrom(end) + 5, true, true)) {
                     j--;
                     continue;
@@ -65,6 +72,7 @@ public class DungeonMapTest {
                 startTile.connect(map.tileLoc.get(start));
                 //map.printDungeon();
             }
+            MapToBLS.generateSimpleBLS("1.map");
         }
 
         map.printDungeon();

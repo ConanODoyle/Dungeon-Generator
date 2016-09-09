@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64da1b6c-b8bb-4c8a-b54b-406cfcbdcf5a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MapToBLS.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Dungeon Generator/BasicRoom.class" afterPath="$PROJECT_DIR$/out/production/Dungeon Generator/BasicRoom.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Dungeon Generator/DungeonMap.class" afterPath="$PROJECT_DIR$/out/production/Dungeon Generator/DungeonMap.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Dungeon Generator/DungeonMapTest.class" afterPath="$PROJECT_DIR$/out/production/Dungeon Generator/DungeonMapTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/0.map" afterPath="$PROJECT_DIR$/0.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/1.map" afterPath="$PROJECT_DIR$/1.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BasicRoom.java" afterPath="$PROJECT_DIR$/src/BasicRoom.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DungeonMap.java" afterPath="$PROJECT_DIR$/src/DungeonMap.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DungeonMapTest.java" afterPath="$PROJECT_DIR$/src/DungeonMapTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MapToBLS.java" afterPath="$PROJECT_DIR$/src/MapToBLS.java" />
     </list>
     <ignored path="Dungeon Generator.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -85,8 +79,8 @@
             <file leaf-file-name="1.map" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/1.map">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="210">
-                    <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+                  <state relative-caret-position="812">
+                    <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
                     <folding />
                   </state>
                 </provider>
@@ -179,8 +173,8 @@
           <file leaf-file-name="MapToBLS.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/MapToBLS.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="397">
-                  <caret line="135" column="20" selection-start-line="135" selection-start-column="20" selection-end-line="135" selection-end-column="20" />
+                <state relative-caret-position="420">
+                  <caret line="81" column="6" selection-start-line="81" selection-start-column="6" selection-end-line="81" selection-end-column="6" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -202,11 +196,11 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="DungeonMap.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="DungeonMap.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/DungeonMap.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-555">
-                  <caret line="84" column="56" selection-start-line="84" selection-start-column="56" selection-end-line="84" selection-end-column="56" />
+                <state relative-caret-position="131">
+                  <caret line="133" column="23" selection-start-line="133" selection-start-column="23" selection-end-line="133" selection-end-column="23" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -214,11 +208,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="DungeonMapTest.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="DungeonMapTest.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/DungeonMapTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="182">
-                  <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+                <state relative-caret-position="873">
+                  <caret line="73" column="13" selection-start-line="73" selection-start-column="13" selection-end-line="73" selection-end-column="13" />
                   <folding />
                 </state>
               </provider>
@@ -275,9 +269,9 @@
         <option value="$PROJECT_DIR$/1.map" />
         <option value="$PROJECT_DIR$/DUNGEON 0.bls" />
         <option value="$PROJECT_DIR$/src/BasicRoom.java" />
+        <option value="$PROJECT_DIR$/src/DungeonMap.java" />
         <option value="$PROJECT_DIR$/src/DungeonMapTest.java" />
         <option value="$PROJECT_DIR$/src/MapToBLS.java" />
-        <option value="$PROJECT_DIR$/src/DungeonMap.java" />
       </list>
     </option>
   </component>
@@ -663,21 +657,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DungeonMapTest_printDungeon - 2016.09.09 at 00h 41m 27s.xml">
-      <configuration name="DungeonMapTest.printDungeon" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DungeonMapTest_printDungeon - 2016.09.09 at 00h 41m 31s.xml">
-      <configuration name="DungeonMapTest.printDungeon" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DungeonMapTest_printDungeon - 2016.09.09 at 00h 44m 56s.xml">
-      <configuration name="DungeonMapTest.printDungeon" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DungeonMapTest_printDungeon - 2016.09.09 at 00h 49m 11s.xml">
-      <configuration name="DungeonMapTest.printDungeon" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DungeonMapTest_printDungeon - 2016.09.09 at 00h 49m 22s.xml">
-      <configuration name="DungeonMapTest.printDungeon" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="DungeonMapTest_printDungeon - 2016.09.09 at 00h 54m 58s.xml">
       <configuration name="DungeonMapTest.printDungeon" configurationId="JUnit" />
     </history-entry>
@@ -691,6 +670,21 @@
       <configuration name="DungeonMapTest.printDungeon" configurationId="JUnit" />
     </history-entry>
     <history-entry file="DungeonMapTest_printDungeon - 2016.09.09 at 01h 02m 34s.xml">
+      <configuration name="DungeonMapTest.printDungeon" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DungeonMapTest_printDungeon - 2016.09.09 at 01h 20m 04s.xml">
+      <configuration name="DungeonMapTest.printDungeon" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DungeonMapTest_printDungeon - 2016.09.09 at 01h 20m 32s.xml">
+      <configuration name="DungeonMapTest.printDungeon" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DungeonMapTest_printDungeon - 2016.09.09 at 01h 20m 55s.xml">
+      <configuration name="DungeonMapTest.printDungeon" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DungeonMapTest_printDungeon - 2016.09.09 at 01h 21m 11s.xml">
+      <configuration name="DungeonMapTest.printDungeon" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DungeonMapTest_printDungeon - 2016.09.09 at 01h 21m 23s.xml">
       <configuration name="DungeonMapTest.printDungeon" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -763,7 +757,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="47" />
+      <option name="time" value="49" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -837,8 +831,6 @@
             <element signature="e#274#307#0" expanded="true" />
             <element signature="e#1550#1551#0" expanded="true" />
             <element signature="e#1597#1598#0" expanded="true" />
-            <element signature="e#3849#3850#0" expanded="true" />
-            <element signature="e#3924#3925#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1036,8 +1028,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/1.map">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+        <state relative-caret-position="812">
+          <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
           <folding />
         </state>
       </provider>
@@ -1090,41 +1082,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DungeonRoom.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="59" column="24" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="24" />
+        <state relative-caret-position="304">
+          <caret line="53" column="9" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#274#307#0" expanded="true" />
             <element signature="e#1550#1551#0" expanded="true" />
             <element signature="e#1597#1598#0" expanded="true" />
-            <element signature="e#3849#3850#0" expanded="true" />
-            <element signature="e#3924#3925#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DungeonMapTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MapToBLS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="135" column="20" selection-start-line="135" selection-start-column="20" selection-end-line="135" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DungeonMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-555">
-          <caret line="84" column="56" selection-start-line="84" selection-start-column="56" selection-end-line="84" selection-end-column="56" />
+        <state relative-caret-position="131">
+          <caret line="133" column="23" selection-start-line="133" selection-start-column="23" selection-end-line="133" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DungeonMapTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="873">
+          <caret line="73" column="13" selection-start-line="73" selection-start-column="13" selection-end-line="73" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MapToBLS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="81" column="6" selection-start-line="81" selection-start-column="6" selection-end-line="81" selection-end-column="6" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
