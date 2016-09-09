@@ -1,168 +1,493 @@
 Layer 0
-                      
-  o                   
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+      L                    
+     LLL                   
+    LLLLL                  
+     LLL                   
+      L*                   
+                           
+                           
+                           
 Layer 1
-                      
-                      
-                      
-                      
-                      
-                      
-AAA*A                 
-*AAA*                 
- AAAA                 
-  AAA                 
-    A                 
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+            B              
+           BBB*B           
+          BBBBB            
+           BBB             
+           BB*             
+           BB              
+                           
+                           
+                           
+                           
+                           
+                           
 Layer 2
- D D*                 
- DDDDD                
- DD*D*                
-                      
-                      
-                      
-AAAAA                 
-AAAAA                 
- AAAA                 
-  AAA                 
-    A                 
-                      
-                      
-               C*     
-      F       CCC     
-   *FFFF*    *CCC     
-    FFFFF     CCC     
-    FFFFF             
-    FFFF*             
-    F                 
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
 Layer 3
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-               CC     
-              CCC     
-             CCCC     
-              CCC     
-                      
-                      
-                      
+                           
+                           
+      A*AAA                
+      AAA*                 
+       AAAA                
+      AAAA                 
+       AAA                 
+        AA                 
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
 Layer 4
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
+                           
+                           
+      AAAAA                
+      AAAA                 
+       AAAA                
+      AAAA                 
+       AAA                 
+        AA                 
+                           
+                           
+                           
+                           
+                           
+          EEEE             
+         *EEEE             
+          EEEE             
+          *EE              
+          *EEE             
+            E              
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
 Layer 5
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-          E           
-          E           
-         *EE          
-          E           
-                      
-                      
-                      
-                      
-                      
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+    NNNN                   
+    NNN*                   
+   NNNNN                   
+  NNN*N                    
+  U                        
+UUUU                       
+UUUUU                      
+*UUU                       
+UUU*                       
+ UUU                       
+                           
+                           
+                           
+                           
+                           
+                           
+                           
 Layer 6
-                      
-                      
-                      
-                      
-                B* B  
-                *B*BBB
-                BBBBBB
-                BBB BB
-                      
-                      
-                      
-          E           
-          E           
-         EEE          
-          E           
-                      
-                      
-                      
-                      
-                      
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+    NNNN                   
+    NNNN                   
+   NNNNN                   
+  NNNNN                    
+  U                        
+UUUU                       
+UUUUU                      
+UUUU                       
+UUUU                       
+ UUU                       
+                           
+                           
+                           
+                           
+                           
+                           
+                           
 Layer 7
-                      
-                      
-                      
-                      
-                BB B  
-                BBBBBB
-                BBBBBB
-                BBB BB
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
+                           
+                           
+                           
+                           
+                           
+   *J                      
+  JJJ                      
+   JJJ                T    
+ J*JJJ               TT*   
+ JJ*J               TTTTT  
+                   TTTTT   
+                   *TTTT   
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+             V             
+             VV            
+             *VV           
+             VVVV          
+             VVVV          
+                           
+                           
+                           
+Layer 8
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                PP         
+               *P*         
+              PPP*         
+             PPPPPP        
+              PPPP         
+              PPP          
+               PP          
+                           
+                       F*F 
+                       FFFF
+             V         FF* 
+             VV        FFF 
+             VVV       FFF 
+             VVVV          
+             VVVV          
+                           
+                           
+                           
+Layer 9
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+             KK*           
+           K*KKK           
+            KKKK           
+            KKKK           
+            K  K           
+                           
+                           
+                           
+                           
+     MMM                   
+     MMMM                  
+    MMMMM                  
+   MMMMMM                  
+    *MMM*                  
+     MMM                   
+Layer 10
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+             KKK           
+           KKKKK           
+            KKKK           
+            KKKK           
+            K  KRR  R      
+                RRR*RR     
+                RRRR*R     
+               R*RHH R     
+                 RHHH      
+     MMM         *HH       
+     MMMM        *HH       
+    MMMMM          H       
+   MMMMMM                  
+    MMMMM                  
+     MMM                   
+Layer 11
+       *                   
+    QQQQQQ                 
+    QQQQ*                  
+    QQQQQ                  
+    QQ*Q                   
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                RR  R      
+                RRRRRR     
+                RRRRRR     
+               RRR   R     
+                 R         
+                           
+                           
+                           
+                           
+                           
+                           
+Layer 12
+                           
+                           
+                           
+                           
+                           
+                           
+              CCC*         
+             CCCC*         
+             CCCCC         
+             CCCC          
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+Layer 13
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+        OOO                
+      **OOO                
+      OOOOO                
+      OOOOO                
+      OOOO                 
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+Layer 14
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+        OOO                
+      OOOOO                
+      OOOOO                
+      OOOOO                
+      OOOO                 
+        D DDD              
+        DDDD               
+        *DDD               
+       DDDDDD              
+        DDDD*              
+         D                 
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+Layer 15
+                           
+                           
+                           
+        I                  
+       *II                 
+      IIII*                
+      IIIII                
+       III*                
+         II                
+                           
+                           
+                           
+        D DDD              
+        DDDD               
+        DDDD               
+       DDDDDD              
+        DDDDD              
+         D                 
+        SSSS               
+        SSSSS              
+         SSSS              
+          **S              
+              GG*          
+              *GGG         
+              GGGG         
+              GGGGG        
+               GG*         
+                           
+Layer 16
+                           
+                           
+                           
+        I                  
+       III                 
+      IIIII                
+      IIIII                
+       IIII                
+         II                
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+              GGG          
+              GGGG         
+              GGGG         
+              GGGGG        
+               GGG         
+                           

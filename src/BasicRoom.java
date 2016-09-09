@@ -104,10 +104,10 @@ public class BasicRoom extends DungeonRoom{
     public void pickExits() {
         Collections.shuffle(takenPos);
         int index = 0;
-        int modifier = Math.max(1, (int) Math.pow(volume, 1.0/3));
+        int modifier = Math.max(1, (int) Math.pow(volume, 1.0/4));
         System.out.println("Starting exit search...");
         Triple currPos;
-        for (int i = 0; i < rand.nextInt(3) + modifier && index < tiles.size(); i++) {
+        for (int i = 0; i < rand.nextInt(2) + modifier && index < tiles.size(); i++) {
             currPos = takenPos.get(index);
             if (getNumXYAdjacentTiles(currPos) >= 4 || currPos.z != pos.z) {
                 i--;

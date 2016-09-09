@@ -65,17 +65,16 @@ public class DungeonMap {
     }
 
     public void pickExits() {
-        for (DungeonRoom r : rooms) {
-            r.pickExits();
-        }
+        rooms.forEach(DungeonRoom::pickExits);
     }
+
     private int pathCount = 0;
     private HashSet<Triple> pathPos = new HashSet<>();
 
     public boolean generatePath(Triple st, Triple en, int length, boolean vertical, boolean prematureFinish) {
         pathPos.clear();
         pathCount = 0;
-        return _generatePath(st, en, length, vertical, prematureFinish) == null;
+        return _generatePath(st, en, length, vertical, prematureFinish) != null;
     }
 
     private Tile _generatePath(Triple st, Triple en, int length, boolean vertical, boolean prematureFinish) {
@@ -83,7 +82,7 @@ public class DungeonMap {
         if (st.equals(en) && (length == 0 || prematureFinish)) {
             System.out.println("Found path!!!");
             if (getTileAt(st) == null) {
-                tileLoc.put(st, new Tile(st, "path", this));
+                addTile(st, new Tile(st, "path", this));
             }
             return getTileAt(st);
         } else if (length <= 0 || length < dist) {
@@ -142,6 +141,7 @@ public class DungeonMap {
     }
 
     private int fileNum = -1;
+    public boolean doCustomLetters = false;
     public void printDungeon() {
         fileNum++;
         //get edge points
@@ -192,7 +192,7 @@ public class DungeonMap {
             }
         }
         for (Tile t : tiles) {
-            if (t.character == 0) {
+            if (t.character == 0 || !doCustomLetters) {
                 printArray[t.x - xMin][t.y - yMin][t.z - zMin] = '.';
             } else {
                 printArray[t.x - xMin][t.y - yMin][t.z - zMin] = t.character;
@@ -204,7 +204,7 @@ public class DungeonMap {
                 printArray[t.x - xMin][t.y - yMin][t.z - zMin] = (char) ('A' + i);
             }
             for (Tile e : r.exits) {
-                if (e.character <= 0) {
+                if (e.character <= 0 || !doCustomLetters) {
                     printArray[e.x - xMin][e.y - yMin][e.z - zMin] = '*';
                 } else {
                     printArray[e.x - xMin][e.y - yMin][e.z - zMin] = e.character;
@@ -221,6 +221,7 @@ public class DungeonMap {
         }
         for (int i = 0; i < printArray[0][0].length; i++) {
             try {
+                assert writer != null;
                 writer.write("Layer " + i);
                 writer.newLine();
             } catch (IOException e) {
@@ -245,6 +246,7 @@ public class DungeonMap {
             }
         }
         try {
+            assert writer != null;
             writer.close();
         } catch (IOException e) {
             e.printStackTrace();
