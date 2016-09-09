@@ -16,12 +16,16 @@ public class DungeonMapTest {
         for (int i = 0; i < 6; i++) {
             x = rand.nextInt(20);
             y = rand.nextInt(20);
-            z = rand.nextInt(7);
+            z = rand.nextInt(7) + 1;
             DungeonRoom r1 = new BasicRoom(new Triple(x, y, z), 4 + rand.nextInt(20), map);
             r1.generateRoom();
             map.rooms.add(r1);
         }
         map.pickExits();
+        //serves as relative position tile so its easier to figure out what is where.
+        map.tileLoc.put(Triple.ORIGIN, new Tile(Triple.ORIGIN, map));
+        map.tiles.add(map.tileLoc.get(Triple.ORIGIN));
+        map.tileLoc.get(Triple.ORIGIN).character = 'o';
 
         map.printDungeon();
 
@@ -41,13 +45,23 @@ public class DungeonMapTest {
                 System.out.println("Room " + i + " exit " + j);
                 Tile startTile = r.exits.get(j);
                 Tile endTile = map.getRandomExit(i);
+                int maxDist = 20;
+                while (startTile.position.distanceFrom(endTile.position) > maxDist) {
+                    endTile = map.getRandomExit(i);
+                    maxDist++;
+                }
                 ArrayList<Triple> startPosOptions = map.getExitXYAdjacentOpenPositions(startTile.position);
-                ArrayList<Triple> endPosOptions = map.getExitXYAdjacentOpenPositions(endTile.position);
+                //ArrayList<Triple> endPosOptions = map.getExitXYAdjacentOpenPositions(endTile.position);
 
                 start = startPosOptions.get(map.rand.nextInt(startPosOptions.size()));
-                end = endPosOptions.get(map.rand.nextInt(endPosOptions.size()));
-                map.generatePath(start, end, 20, true, true);
-                map.printDungeon();
+                end = endTile.position;//endPosOptions.get(map.rand.nextInt(endPosOptions.size()));
+                System.out.println("   Path Distance: " + (start.distanceFrom(end) + 10));
+                if (!map.generatePath(start, end, start.distanceFrom(end) + 20, true, true)) {
+                    j--;
+                    continue;
+                }
+                startTile.connect(map.tileLoc.get(start));
+                //map.printDungeon();
             }
         }
 

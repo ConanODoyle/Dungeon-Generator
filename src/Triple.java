@@ -46,6 +46,10 @@ public class Triple {
         }
     }
 
+    public int distanceFrom(Triple dest) {
+        return Math.abs(dest.x - x) + Math.abs(dest.y - y) + Math.abs(dest.z - z);
+    }
+
     public Triple shiftPos(int dir) {
         return this.transform(xShift[dir], yShift[dir], zShift[dir]);
     }

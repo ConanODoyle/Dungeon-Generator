@@ -1,7 +1,6 @@
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.lang.reflect.Array;
 import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
@@ -71,12 +70,12 @@ public class DungeonMap {
         }
     }
     private int pathCount = 0;
-    private ArrayList<Tile> pathTiles = new ArrayList<>();
+    private HashSet<Triple> pathPos = new HashSet<>();
 
-    public void generatePath(Triple st, Triple en, int length, boolean vertical, boolean prematureFinish) {
-        pathTiles = new ArrayList<>();
+    public boolean generatePath(Triple st, Triple en, int length, boolean vertical, boolean prematureFinish) {
+        pathPos.clear();
         pathCount = 0;
-        _generatePath(st, en, length, vertical, prematureFinish);
+        return _generatePath(st, en, length, vertical, prematureFinish) == null;
     }
 
     private Tile _generatePath(Triple st, Triple en, int length, boolean vertical, boolean prematureFinish) {
@@ -84,14 +83,17 @@ public class DungeonMap {
         if (st.equals(en) && (length == 0 || prematureFinish)) {
             System.out.println("Found path!!!");
             if (getTileAt(st) == null) {
-                tileLoc.put(st, new Tile(st, "path_end", this));
+                tileLoc.put(st, new Tile(st, "path", this));
             }
             return getTileAt(st);
         } else if (length <= 0 || length < dist) {
             //System.out.println("Invalid distance to end! " + length + " < " + dist);
             return null;
-        } else if (isPositionOccupiedByRoom(st) || pathTiles.contains(getTileAt(st))) {
+        } else if (isPositionOccupiedByRoom(st)) {
             //System.out.println("Position already in use!!");
+            return null;
+        } else if (getTileAt(st) != null && pathPos.contains(getTileAt(st).position)) {
+            //System.out.println("Position has been used by path before!!");
             return null;
         }
         //create a tile here if needed
@@ -103,7 +105,7 @@ public class DungeonMap {
         } else {
             getTileAt(st).character = '+';
         }
-        pathTiles.add(getTileAt(st));
+        pathPos.add(st);
 
         //pick a random direction and go with it
         Integer[] o = {0, 1, 2, 3, 4, 5};
@@ -123,7 +125,6 @@ public class DungeonMap {
             }
             if (nextTile != null) {
                 getTileAt(st).connect(nextTile);
-                nextTile.connect(getTileAt(st));
                 return getTileAt(st);
             } else {
                 options.remove(new Integer(dir));
@@ -133,7 +134,7 @@ public class DungeonMap {
         //System.out.println("Could not find valid path!");
         if (!hadTile) {
             tiles.remove(tileLoc.get(st));
-            pathTiles.remove(tileLoc.get(st));
+            //pathPos.remove(tileLoc.get(st));
             tileLoc.remove(st);
             pathCount--;
         }
@@ -203,7 +204,11 @@ public class DungeonMap {
                 printArray[t.x - xMin][t.y - yMin][t.z - zMin] = (char) ('A' + i);
             }
             for (Tile e : r.exits) {
-                printArray[e.x - xMin][e.y - yMin][e.z - zMin] = '*';
+                if (e.character <= 0) {
+                    printArray[e.x - xMin][e.y - yMin][e.z - zMin] = '*';
+                } else {
+                    printArray[e.x - xMin][e.y - yMin][e.z - zMin] = e.character;
+                }
             }
         }
 
